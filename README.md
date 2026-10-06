@@ -493,6 +493,7 @@ The system is designed to use the dataset schema instead of hardcoding answers f
 
 ## Project Structure
 
+```text
 intelligent-analytics-query-engine/
 |
 ├── backend/
@@ -576,7 +577,7 @@ intelligent-analytics-query-engine/
 ├── .gitignore
 ├── README.md
 └── LICENSE
-
+```
 ---
 
 ## API
