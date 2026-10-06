@@ -652,32 +652,44 @@ Install the following:
 
 ## Backend Setup
 
-Open a terminal and navigate to the backend:
+Navigate to the backend:
 
+```bash
 cd backend
+```
 
 Create a Python virtual environment:
 
+```bash
 python -m venv .venv
+```
 
 Activate the virtual environment on Windows:
 
+```powershell
 .\.venv\Scripts\Activate.ps1
+```
 
 Install dependencies:
 
+```bash
 pip install -r requirements.txt
+```
 
-Create a .env file in the backend directory.
+Create a `.env` file in the backend directory.
 
 Example:
 
+```env
 OPENAI_API_KEY=your_openai_api_key
 OPENAI_MODEL=your_model_name
+```
 
 Start the backend:
 
+```bash
 uvicorn app.main:app --reload --port 8000
+```
 
 The backend will be available at:
 
@@ -686,7 +698,6 @@ http://localhost:8000
 FastAPI documentation will be available at:
 
 http://localhost:8000/docs
-
 ---
 
 ## Frontend Setup
@@ -695,60 +706,46 @@ Open another terminal.
 
 Navigate to the frontend:
 
+```bash
 cd frontend
+```
 
 Install dependencies:
 
+```bash
 npm install
+```
 
 Start the development server:
 
+```bash
 npm run dev
+```
 
 The frontend will normally be available at:
 
 http://localhost:5173
-
 ---
 
 ## Running the Complete Application
 
 Start the backend first:
 
+```powershell
 cd backend
-
 .\.venv\Scripts\Activate.ps1
-
 uvicorn app.main:app --reload --port 8000
+```
 
 Then start the frontend in another terminal:
 
+```bash
 cd frontend
-
+npm install
 npm run dev
+```
 
 Open the frontend URL shown by Vite in the browser.
-
----
-
-## Testing
-
-Backend tests can be executed using:
-
-cd backend
-
-pytest
-
-The test suite covers areas including:
-
-- Dataset loading
-- Metric handling
-- Query planning
-- Query validation
-- Query execution
-- Evaluation queries
-- API endpoints
-
 ---
 
 ## Example Queries
