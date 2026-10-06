@@ -1,0 +1,52 @@
+[
+  {
+    "query": "Show me the top 5 products by revenue",
+    "capability": "Ranking",
+    "description": "Returns the highest-revenue products."
+  },
+  {
+    "query": "Show total revenue by region",
+    "capability": "Grouping and aggregation",
+    "description": "Groups total revenue by region."
+  },
+  {
+    "query": "Show revenue by month",
+    "capability": "Time-based analysis",
+    "description": "Calculates revenue at monthly granularity."
+  },
+  {
+    "query": "What percentage of total revenue comes from each region?",
+    "capability": "Contribution analysis",
+    "description": "Calculates each region's contribution to total revenue."
+  },
+  {
+    "query": "Show the top 3 products by profit",
+    "capability": "Profit ranking",
+    "description": "Returns the highest-profit products."
+  },
+  {
+    "query": "Show total revenue for the North region",
+    "capability": "Filtering",
+    "description": "Filters the dataset to the North region and calculates revenue."
+  },
+  {
+    "query": "Show total profit by product category",
+    "capability": "Grouped aggregation",
+    "description": "Groups total profit by product category."
+  },
+  {
+    "query": "Which region generated the highest revenue?",
+    "capability": "Ranking",
+    "description": "Identifies the highest-performing region by revenue."
+  },
+  {
+    "query": "Show the lowest 3 products by profit",
+    "capability": "Ascending ranking",
+    "description": "Returns the products with the lowest profit."
+  },
+  {
+    "query": "Show quantity sold by product category",
+    "capability": "Quantity aggregation",
+    "description": "Groups total quantity sold by product category."
+  }
+]
