@@ -113,6 +113,7 @@ This approach provides better control, validation, reliability, and security.
 
 The system follows the architecture below:
 
+```text
 User Query
     |
     v
@@ -136,19 +137,16 @@ Deterministic Pandas Analytics Engine
     v
 Result Formatting
     |
-    +----------------------+
-    |                      |
-    v                      v
-Confidence Score       Explanation
-    |
-    v
-Analytics Dashboard
-    |
-    +----------------------+
-    |          |           |
-    v          v           v
-Charts      Tables      Insights
-
+    +----------------------+----------------------+
+    |                      |                      |
+    v                      v                      v
+Confidence Score      Explanation           Analytics Dashboard
+                                               |
+                                    +----------+----------+
+                                    |          |          |
+                                    v          v          v
+                                  Charts     Tables    Insights
+```
 ---
 
 ## Query Processing Flow
@@ -175,6 +173,7 @@ A major design decision in SalesAnalyticsAI is that the LLM does not generate ex
 
 The system uses the following approach:
 
+```text
 Natural Language
     |
     v
@@ -191,6 +190,7 @@ Controlled Analytics Operations
     |
     v
 Pandas Execution
+```
 
 This avoids directly executing arbitrary AI-generated Python or SQL.
 
@@ -205,7 +205,6 @@ Benefits of this approach include:
 - Clear separation of responsibilities
 - Easier debugging
 - Easier extension of supported analytical operations
-
 ---
 
 ## Technology Stack
